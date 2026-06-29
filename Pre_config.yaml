@@ -1,0 +1,26 @@
+# Configuration file for forward integral prediction
+
+# Directory settings
+data_dir: "UCONN/UCONN_nonreactive/F0.7_20bar"           # Input data directory
+results_dir: "UCONN/UCONN_Pre_results_20bar_RCON30bar"            # Output results directory
+
+# Input File patterns
+csv_pattern: "UCONN*.csv"               # Pattern for matching CSV files
+exp_data_file: "UCONN/exp_data_F07_20bar.csv"         # Experimental data filename
+
+# Parameters file
+param_path: "fit_results_IC8H18-RCO30Bar.txt" # Full path to optimization parameters file
+
+# mixture information should be set if 17 parameter result txt is used
+equivalence_ratio: 0.7 # phi
+fuel_molar_fraction: 0.01163 # fuel molar fraction [F] in the mixture, should be between 0 and 1  
+
+# EOC Time settings
+t_shift: 0.0                             # EOC time shift (ms)
+# Note: t_com will be calculated as: time at max pressure + t_shift
+
+# Column names (optional, will use defaults if not specified)
+# column_names:
+#   time: "Time(msec)"
+#   temperature: "Temperature(K)"
+#   pressure: "Pressure(bar)"

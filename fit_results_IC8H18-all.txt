@@ -1,0 +1,37 @@
+Fuel: IC8H18
+Optimization objective: Logarithmic space absolute deviation squared sum
+First stage optimization method: Least Squares in logarithmic space (after GA)
+Total stage optimization method: Least Squares in logarithmic space (after GA)
+
+First stage fitting parameters:
+A1 = 1.103001440045728e-08
+b1 = 1.0816945555592665
+c1 = -1.098790909776714
+n1 = -0.764702860641661
+E1 = 12841.78466934496
+Original space R2 = 0.966596395756191
+Logarithmic space R2 = 0.9785844112870372
+
+Total ignition delay time fitting parameters:
+A1 = 1.1250614688466386e-08
+b1 = 1.0744809355895646
+c1 = -1.1207667279721856
+n1 = -0.749408803428828
+E1 = 12765.963200029244
+Ah = 4.7132581171190295e-07
+bh = 0.3422746302028205
+ch = -0.539640746832904
+nh = -0.9415676362215062
+Eh = 16122.090159763195
+Teq = 1016.8027941972894
+k = 0.06780707447790446
+w = -1.7450027685685827
+u = -0.0639985719017709
+s = 0.09886916781469628
+C0 = 9999.999929741738
+xf = 0.9038333191110557
+Original space R2 = 0.974493594750825
+Logarithmic space R2 = 0.9853951674127579
+
+WARNINGS:
+WARNING: C0 near upper bound limit (10000.0)
