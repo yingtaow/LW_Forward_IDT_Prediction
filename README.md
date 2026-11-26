@@ -1,4 +1,4 @@
-# IC8H18 Ignition Delay Time Prediction
+﻿# IC8H18 Ignition Delay Time Prediction
 
 A Python implementation for predicting ignition delay times (IDT) of fuels using the Livengood-Wu (L-W) forward integral method.
 
@@ -51,7 +51,7 @@ pip install numpy pandas matplotlib pyyaml
 ### Running the Program
 
 ```bash
-python main_nonreac_L-W_integral_V1.py
+python main_nonreac_L-W_integral.py
 ```
 
 ### Configuration
@@ -99,7 +99,7 @@ t_shift: 0.0                                   # EOC time shift (ms)
 
 ```
 .
-├── main_nonreac_L-W_integral_V1.py    # Main program entry
+├── main_nonreac_L-W_integral.py    # Main program entry
 ├── idt_calculator_nonreac.py          # IDT calculation module
 ├── plotting_utils_forward.py          # Plotting utilities
 ├── Pre_config.yaml                    # Configuration file
@@ -164,7 +164,7 @@ These parameters are automatically converted to 11 parameters using the specifie
 
 2. Run the program:
    ```bash
-   python main_nonreac_L-W_integral_V1.py
+   python main_nonreac_L-W_integral.py
    ```
 
 3. Check the results in the specified `results_dir`:
@@ -183,6 +183,17 @@ The program generates the following output files in the `results_dir`:
   - `Predicted_1st_IDTs (ms)`: Predicted first-stage ignition delay
   - `Predicted_Total_IDTs (ms)`: Predicted total ignition delay
   - `Dp_at_1st_ignition (bar)`: Pressure rise at first-stage ignition
+
+## Version History
+
+See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
+
+### V2 (Current)
+- Output of the first-stage ignition pressure rise (`Dp_at_1st_ignition`)
+- Main entry script renamed to `main_nonreac_L-W_integral.py`
+
+### V1
+- Initial release: forward L-W integral prediction of two-stage IDTs
 
 ## License
 
